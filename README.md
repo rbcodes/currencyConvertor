@@ -66,14 +66,38 @@ You've successfully run and modified your React Native App. :partying_face:
 
 # Troubleshooting
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+If you encounter issues while running the project, here are some common solutions:
 
-# Learn More
+## Code Runs on Android
 
-To learn more about React Native, take a look at the following resources:
+- If your code runs on Android but not on iOS (or vice versa), ensure you have followed the setup instructions for each platform. Verify configurations specific to each platform, such as emulator settings or platform-specific code.
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Running Test Cases
+
+- To run the test cases, use the following command:
+  ```bash
+  # using npm
+  npm test
+
+  # OR using Yarn
+  yarn test
+
+## Handling Axios Errors:
+
+## Handling Axios Errors
+
+If you encounter Axios errors, follow these steps:
+
+1. **Check API Server Status:**
+   - Ensure that your API server is running and accessible.
+
+2. **Verify API URL:**
+   - Open the `services/api.ts` file and confirm that the API URL is correct and points to the right address.
+
+3. **Network Configuration:**
+   - If the issue persists, use the following command to route API requests from your Android emulator to your development server:
+     ```bash
+     adb reverse tcp:8000 tcp:8000
+     ```
+     This command maps the emulator's network requests to your development server, ensuring proper communication.
+
