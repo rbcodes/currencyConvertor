@@ -1,31 +1,24 @@
-
-
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution":   
- "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-native"
+    "target": "esnext", // Modern JavaScript features
+    "module": "commonjs", // Use CommonJS module system
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements
+    "moduleResolution": "node", // Resolve modules the same way Node.js does
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "isolatedModules": true, // Ensure all files can be safely transpiled independently
+    "noEmit": true, // Do not emit output files (useful for type-checking only)
+    "jsx": "react-native" // JSX support for React Native
   },
   "include": [
-    "src"
+    "src" // Include source files in the project
   ],
   "exclude": [
-    "node_modules"   
-
+    "node_modules" // Exclude node_modules from the project
   ]
 }
-// {
-//   "extends": "@react-native/typescript-config/tsconfig.json"
-// }
