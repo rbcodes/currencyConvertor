@@ -70,7 +70,7 @@ If you encounter issues while running the project, here are some common solution
 
 ## Code Runs on Android
 
-- If your code runs on Android but not on iOS (or vice versa), ensure you have followed the setup instructions for each platform. Verify configurations specific to each platform, such as emulator settings or platform-specific code.
+- The code currently supports only Android, ensure you have followed the setup instructions for the platform. Verify configurations specific to the platform, such as emulator settings or platform-specific code.
 
 ## Running Test Cases
 
